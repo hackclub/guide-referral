@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base(process.env.AIRTABLE_BASE);
 
 app.listen(process.env.PORT || 3000, () => {
- console.log("GPstick running on port 3000");
+ console.log("The potato is running on port 3000");
 });
 
 app.post('/chopchop',function(req,res){

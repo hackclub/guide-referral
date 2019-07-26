@@ -2,12 +2,18 @@ $(function () {
 
     var pageID = unescape(getUrlVars()["p"])
 
-    if (window.location != window.parent.location && pageID != undefined && pageID != "") {
-        $("body").removeClass("hidden")
-        $("#pageID").html(pageID)
-    } else {
-        window.location.replace("https://www.notion.so/hackclub/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b")
+    if (window.location.hostname != "localhost") {
+
+        if (window.location != window.parent.location && pageID != "undefined" && pageID != "") {
+            $("body").removeClass("hidden")
+            $("#pageID").html(pageID)
+        } else {
+            window.location.replace("https://www.notion.so/hackclub/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b")
+        }
+
     }
+    
+    
 
     $('#appreciate').submit(function (e) {
         $("#button-spinner").removeClass("hidden")

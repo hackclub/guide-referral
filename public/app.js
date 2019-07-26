@@ -6,7 +6,7 @@ $(function () {
         $("body").removeClass("hidden")
         $("#pageID").html(pageID)
     } else {
-        //window.location.replace("https://www.notion.so/hackclub/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b")
+        window.location.replace("https://www.notion.so/hackclub/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b")
     }
 
     $('#appreciate').submit(function (e) {

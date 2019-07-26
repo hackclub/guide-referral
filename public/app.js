@@ -5,19 +5,20 @@ $(function () {
     if (window.location.hostname != "localhost") {
 
         if (window.location != window.parent.location) {
-
             if (pageID == "undefined" || pageID == "") {
                 $("body").html("<div style=\"text-align: center\"><a href=\"https://www.notion.so/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b\" target=\"_blank\">Misconfigured embed detected. Click here to be redirected.</a></div>")
+                return
             }
-
-            $("body").removeClass("hidden")
-            $("#pageID").html(pageID)
         } else {
             window.location.replace("https://www.notion.so/hackclub/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b")
         }
 
+    } else {
+        pageID = "localhost"
     }
     
+    $("body").removeClass("hidden")
+    $("#pageID").html(pageID)
     
 
     $('#appreciate').submit(function (e) {

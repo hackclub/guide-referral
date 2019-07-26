@@ -4,7 +4,12 @@ $(function () {
 
     if (window.location.hostname != "localhost") {
 
-        if (window.location != window.parent.location && pageID != "undefined" && pageID != "") {
+        if (window.location != window.parent.location) {
+
+            if (pageID == "undefined" || pageID == "") {
+                $("body").html("<a href=\"\" target=\"_blank\">Misconfigured embed detected. Click here to be redirected.</a>")
+            }
+
             $("body").removeClass("hidden")
             $("#pageID").html(pageID)
         } else {

@@ -7,7 +7,7 @@ $(function () {
         if (window.location != window.parent.location) {
 
             if (pageID == "undefined" || pageID == "") {
-                $("body").html("<div style=\"text-align: center\"><a href=\"https://https://www.notion.so/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b\" target=\"_blank\">Misconfigured embed detected. Click here to be redirected.</a></div>")
+                $("body").html("<div style=\"text-align: center\"><a href=\"https://www.notion.so/How-the-Referral-Box-Works-69fc3ec2882d44cf99870ca710522e5b\" target=\"_blank\">Misconfigured embed detected. Click here to be redirected.</a></div>")
             }
 
             $("body").removeClass("hidden")

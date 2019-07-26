@@ -18,8 +18,8 @@ app.post('/chopchop',function(req,res){
     var page=req.body.page;
 
     base('Auto Grant').create({
-        "User": "@" + username,
-        "Submitted": "@" + source,
+        "User": username,
+        "Submitted": source,
         "Page Name": page
       }, function(err, record) {
         if (err) {

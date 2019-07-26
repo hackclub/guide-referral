@@ -11,7 +11,7 @@ if (window.location.hostname != "localhost") {
 $("#generate").click(function() {
     var n = $("#url").val();
     
-    if (n.indexOf("https://www.notion.so/hackclub") == -1) {
+    if (n.indexOf("https://www.notion.so/hackclub/") == -1) {
         $("#url").addClass("is-invalid");
         $("#urlInvalid").removeClass("hidden");
 
@@ -20,7 +20,7 @@ $("#generate").click(function() {
             $("#urlInvalid").addClass("hidden");
         }, 5000)
     } else {
-        var l = n.replace('https://www.notion.so/hackclub', "https://ref.guide.hackclub.com/?p=")
+        var l = n.replace('https://www.notion.so/hackclub/', "https://ref.guide.hackclub.com/?p=")
         $("#embed").val(l)
     }
 

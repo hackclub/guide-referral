@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h5 class="hint">🛠 Generate Your Own Referral Box</h5>
+        <p></p>
+        <form id="referral">
+
+            <div class="form-group">
+                <label for="url">Your Notion Page URL</label>
+                <div class="input-group mb-3">
+                    <input type="text" id="url" class="form-control form-control-sm" aria-describedby="urlHelp"
+                        placeholder="https://www.notion.so/hackclub/..." autofocus>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-sm" type="button" id="generate">Generate</button>
+                    </div>
+
+                    <div class="invalid-feedback hidden" id="urlInvalid">
+                        Invalid URL. Please paste link in from Notion directly.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="url">Your Embeddable Link</label>
+                <div class="input-group mb-3">
+                    <input type="text" id="embed" class="form-control form-control-sm"
+                        placeholder="https://ref.guide.hackclub.com/?p=..." aria-describedby="embedHelp" readonly>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary btn-sm" type="button"
+                            data-clipboard-target="#embed">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="embed.js"></script>
+</body>
+
+</html>

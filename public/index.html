@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="hidden">
+    <div class="wrapper">
+        <h5 class="hint">💸 Who referred you here?</h5>
+        <p class="hint">
+            We’re giving GP (the fun virtual currency of Hack Club) those who help you find the
+            information you need.
+            <br />
+            Current link: <span id="pageID">Unknown</span>
+        </p>
+        <form id="appreciate">
+
+            <div class="row">
+
+                <div class="col">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" id="source" class="form-control" placeholder="itsmingjie"
+                            aria-describedby="sourceHelp" autofocus>
+                    </div>
+                    <small id="sourceHelp" class="form-text text-muted">Your Slack handle (username)</small>
+                </div>
+
+                <div class="col">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" id="username" class="form-control" placeholder="megan"
+                            aria-describedby="usernameHelp" autofocus>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit" id="submit">
+                                <span id="button-spinner" class="spinner-border spinner-border-sm hidden" role="status"
+                                    aria-hidden="true"></span>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                    <small id="usernameHelp" class="form-text text-muted">Slack handle of the person who referred you
+                        here</small>
+                </div>
+
+            </div>
+
+
+
+        </form>
+
+        <div id="success" class="alert alert-success hidden" role="alert">
+            🤑 Done! The gp is on the way.
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

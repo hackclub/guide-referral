@@ -32,7 +32,7 @@ $(function () {
             data: {
                 source: $("#source").val(),
                 username: $("#username").val(),
-                page: pageID
+                page: "https://www.notion.so/hackclub/" + pageID
             }
         }).done(function (res) {
             if (res.success) {

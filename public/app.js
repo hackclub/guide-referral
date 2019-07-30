@@ -25,13 +25,20 @@ $(function () {
         $("#button-spinner").removeClass("hidden")
         $("#button-spinner").attr("disabled", true)
 
+        var sourceVal = $("#source").val()
+        var usernameVal = $("#username").val()
+
+        // halt if empty - serverside guarding
+        if (sourceVal == "" || usernameVal == "")
+            return;
+
         e.preventDefault()
         $.ajax({
             type: 'POST',
             url: '/chopchop',
             data: {
-                source: $("#source").val(),
-                username: $("#username").val(),
+                source: sourceVal,
+                username: usernameVal,
                 page: "https://www.notion.so/hackclub/" + pageID
             }
         }).done(function (res) {

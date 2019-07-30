@@ -9,55 +9,55 @@
 </head>
 
 <body class="hidden">
-    <div class="wrapper">
-        <h5 class="hint">💸 Who referred you here?</h5>
-        <p class="hint" id="desc">
-            We’re giving GP (the fun virtual currency of Hack Club) those who help you find the
-            information you need.
-            <br />
-            Current link: <span id="pageID">Unknown</span>
-        </p>
-        <form id="appreciate">
+    <div class="vcenter">
+        <div class="wrapper">
+            <h5 class="hint">💸 Who referred you here?</h5>
+            <p class="hint" id="desc">
+                Those who help you find the information you need gets rewarded with gp!
+            </p>
+            <form id="appreciate">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col-sm" id="col-1">
-                    <div class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+                    <div class="col-sm" id="col-1">
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" id="source" class="form-control" placeholder="itsmingjie"
+                                aria-describedby="sourceHelp" autofocus required>
                         </div>
-                        <input type="text" id="source" class="form-control" placeholder="itsmingjie"
-                            aria-describedby="sourceHelp" autofocus required>
+                        <small id="sourceHelp" class="form-text text-muted">Your Slack handle (username)</small>
                     </div>
-                    <small id="sourceHelp" class="form-text text-muted">Your Slack handle (username)</small>
-                </div>
-                <div class="col-sm">
-                    <div class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+                    <div class="col-sm">
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" id="username" class="form-control" placeholder="megan"
+                                aria-describedby="usernameHelp" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" id="submit">
+                                    <span id="button-spinner" class="spinner-border spinner-border-sm hidden"
+                                        role="status" aria-hidden="true"></span>
+                                    Submit
+                                </button>
+                            </div>
                         </div>
-                        <input type="text" id="username" class="form-control" placeholder="megan"
-                            aria-describedby="usernameHelp" required>
-                        <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit" id="submit">
-                                <span id="button-spinner" class="spinner-border spinner-border-sm hidden" role="status"
-                                    aria-hidden="true"></span>
-                                Submit
-                            </button>
-                        </div>
+                        <small id="usernameHelp" class="form-text text-muted">Slack handle of the person who referred
+                            you
+                            here</small>
                     </div>
-                    <small id="usernameHelp" class="form-text text-muted">Slack handle of the person who referred you
-                        here</small>
+
                 </div>
 
+
+
+            </form>
+
+            <div id="success" class="alert alert-success hidden" role="alert">
+                🤑 Done! The gp is on the way.
             </div>
-
-
-
-        </form>
-
-        <div id="success" class="alert alert-success hidden" role="alert">
-            🤑 Done! The gp is on the way.
         </div>
     </div>
 

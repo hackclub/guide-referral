@@ -5,6 +5,7 @@
 body {
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 span.atbox input[type="text"] {
@@ -40,8 +41,13 @@ p.hint {
     margin-top: 3px;
     padding: 1rem;
 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+}
+
+.vcenter {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 /** 
@@ -53,8 +59,9 @@ p.hint {
     left: 0;
 } */
 
-.input-group, #appreciate {
-    margin-bottom: 0!important;
+.input-group,
+#appreciate {
+    margin-bottom: 0 !important;
 }
 
 .btn-primary {

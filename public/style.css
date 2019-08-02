@@ -15,7 +15,7 @@ span.atbox input[type="text"] {
 
 span.atbox {
     background-color: #FFF;
-    color: #888;
+    color: #333;
     line-height: 20px;
     height: 20px;
     padding: 3px;
@@ -24,7 +24,7 @@ span.atbox {
 }
 
 .hint {
-    color: #6c757d;
+    color: #333;
 }
 
 p.hint {
